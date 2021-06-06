@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.toggler-icon {
+    color: #fff;
+}
+header {
+    background-image: url(../images/bg.png);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link { 
+    color: #fff;
+    position: relative;
+    padding: 0;
+    
+}
+.navbar-light .navbar-nav .nav-item {
+    padding: 0 15px;
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover { 
+    color: #fff;
+
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #008ed6;
+    transition: .4s all ease-in-out ;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    background: #008ed6;
+    transition: .4s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+    width: 47%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 47%;
+}
+
+.banner-content {
+    min-height: 90vh;
+    align-items: center;
+    position: relative;
+}
+.banner-content h5 {
+    color: #008ed6;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.banner-content h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.banner-content p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight:normal;
+}
+
+.btn-download {
+    color: #fff;
+    background-color: #008ed6;
+    padding: 15px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.btn-features{
+    color: #fff;
+    margin-left: 30px;
+    padding: 15px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid #888888 ;
+    border-radius: 5px;
+}
+
+.btn-features:hover {
+    color: #fff;
+    background-color: #008ed6;
+    border-color: transparent;
+}
+
+.btn-download:hover{
+    color: #fff;
+    background: transparent;
+    border: 1px solid #888888;
+}
+.iphone {
+    display: none;
+}
+.phone {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    width: 50%;
+}
+
+.phone img {
+    width: 80%;
+}
+
+.heading h1{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.heading h5 {
+    color: #008ed6;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.features_item h2 {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.heading span {
+    display: inline-block;
+    height: 2px;
+    width: 70px;
+    position: relative;
+}
+
+.heading span::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    left: 0;
+    top: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.heading span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    right: 0;
+    top: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.feature_section {
+
+}
+
+.feature_section:hover .heading span::after {
+    width: 45%;
+}
+
+.feature_section:hover .heading span::before {
+    width: 45%;
+}
+
+.features_item {
+
+}
+
+.features_item h2 {
+
+}
+
+
+.icon-box {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 22px ;
+    color: #4a4a4a ;
+    margin: auto;
+}
+.design_two h5 {
+    color: #008ed6;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.design_two h1 {
+    color: #1a1a1a;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.design_two p {
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.design_two li {
+    color: #1b1b1b;
+    font-size: 18px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.design_two ul {
+    
+}
+
+.design_two i {
+    color: #34a5de;
+    margin-right: 10px;
+}
+.for_color {
+    background-color: #f2f2f2;
+}
+/* before after animation effect */
+
+.design_two span {
+    display: inline-block;
+    height: 2px;
+    width: 70px;
+    position: relative;
+}
+
+.design_two span::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    left: 0;
+    top: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.design_two span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    right: 0;
+    top: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.design_one:hover .design_two span::after {
+    width: 45%;
+}
+
+.design_one:hover .design_two span::before {
+    width: 45%;
+}
+
+.testimonial {
+    background-image: url(../images/testimonial_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial h1 {
+    color: #fff;
+}
+
+.heading h5 {
+
+}
+
+.testimonial p {
+    color: #fff;
+    font-style: italic;
+}
+
+.client {
+    display: flex;
+    justify-content: space-between;
+    width: 32% ;
+    align-items: center;
+}
+
+.client-img {
+    width: 50px;
+    border-radius: 50px;
+      
+    overflow: hidden;
+}
+
+.client-des {
+    
+}
+ 
+.client-des h2{
+    font-size: 18px;
+    color: #fff;   
+}
+
+.client-des h6 {
+    color: #fff;
+}
+
+.owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50px;
+    margin: 30px 0;
+    margin-right: 10px;
+}
+
+.owl-dots .active span {
+    width: 15px;
+    height: 15px;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Black_Banner {
+    background-color: #15141a;
+    color: white;
+    padding: 20px 0 ;
+}
+
+.Black_Banner h1 {
+    margin-top: 45px;
+}
+
+.Black_Banner h1 span{
+    font-weight: bold;
+}
+
+.Black_Banner .btn-download_one{
+    margin-top: 45px;
+    color: #fff;
+    background-color: #008ed6;
+    padding: 15px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.Black_Banner .btn-features_one{
+    margin-top: 45px;
+    color: #fff;
+    margin-left: 30px;
+    padding: 15px 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid #888888 ;
+    border-radius: 5px;
+}
+
+.btn-download_one:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #888888;
+}
+
+.btn-features_one:hover {
+    color: #fff;
+    background-color: #008ed6;
+    border-color: transparent;
+}
+
+.Pricing {
+    text-align: center;
+}
+
+.Pricing .heading_one {
+
+}
+
+.Pricing .heading_one h5{
+    color: #008ed6;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Pricing .heading_one h1 {
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.Pricing .heading_one span {
+    
+}
+
+.border_one:hover {
+    background-color: #008ed6;
+}
+.border_one:hover .btn-features {
+    color: #008ed6 !important;
+}
+
+/* before after animation effect 
+
+.design_two span {
+    display: inline-block;
+    height: 2px;
+    width: 70px;
+    position: relative;
+}
+
+.design_two span::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    left: 0;
+    top: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.design_two span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    right: 0;
+    top: 0;
+    transition: .4s all ease-in-out;
+
+}
+
+.design_one:hover .design_two span::after {
+    width: 45%;
+}
+
+.design_one:hover .design_two span::before {
+    width: 45%;
+}
+
+*/
+.first_column {
+    border: 1px solid rgb(206, 195, 195);
+   
+}
+
+.first_column h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+    
+}
+
+.first_column h1 {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.first_column sup {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.first_column p {
+    margin: 30px 5px 30px 5px;
+    color: #999999;
+}
+
+.first_column a {
+    font-weight: bold;
+    color: #008ed6;
+    border: 1px solid rgb(206, 195, 195);
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.first_column p span {
+    color: #008ed6;
+}
+    
+.border_one {
+    border: 1px solid rgb(206, 195, 195);
+    padding: 25px 0;
+}
+.contact {
+    position: relative;
+    margin-bottom: 230px;
+    background-color: #ededed;
+}
+.contact i {
+    color:#008ed6 ;
+    font-size: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.contact p {
+    color: #999999;
+}
+
+.contact_form {
+    background-color: black;
+    padding: 50px;
+    position: absolute;
+    top: 100%;
+    margin-left: 64px
+}
+
+form {
+
+}
+
+.form-control {
+    background: transparent;
+    border-radius: 3;
+}
+
+form input[type="submit"] {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    background-color: #008ed6;
+    padding: 7px 15px;
+    border: none;
+}
+
+footer {
+    background-color: black;
+    height: 15vh;
+    color: #444348;
+}
+
+footer ul {
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    
+    width: 25%;
+} 
+
+footer ul li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+footer ul li i {
+    color: white;
+}
+
+footer ul li i:hover {
+    color: #008ed6;
+}
+
+footer p {
+    margin-top: 10px;
+}
